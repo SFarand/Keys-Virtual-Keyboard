@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#211914">
+  <title>Glass Keys - Virtual Keyboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Decorative background orbs -->
+  <div class="orb orb-one"></div>
+  <div class="orb orb-two"></div>
+  <div class="orb orb-three"></div>
+
+  <main class="keyboard-card">
+    <div class="top-line">
+      <span class="status-dot"></span>
+      <span class="eyebrow">VIRTUAL TYPING EXPERIENCE</span>
+    </div>
+
+    <h1>Glass <span>Keys</span></h1>
+    <p class="subtitle">Click the keys or use your own keyboard</p>
+
+    <textarea id="output" placeholder="Start typing here..." readonly aria-label="Typed text"></textarea>
+
+    <div class="info-bar">
+      <span id="counter" aria-live="polite">0 characters</span>
+      <button id="clear-btn" class="clear-btn" type="button">Clear all</button>
+    </div>
+
+    <div class="keyboard" aria-label="Virtual keyboard">
+      <div class="row">
+        <button class="key" data-key="1" type="button">1</button>
+        <button class="key" data-key="2" type="button">2</button>
+        <button class="key" data-key="3" type="button">3</button>
+        <button class="key" data-key="4" type="button">4</button>
+        <button class="key" data-key="5" type="button">5</button>
+        <button class="key" data-key="6" type="button">6</button>
+        <button class="key" data-key="7" type="button">7</button>
+        <button class="key" data-key="8" type="button">8</button>
+        <button class="key" data-key="9" type="button">9</button>
+        <button class="key" data-key="0" type="button">0</button>
+        <button class="key wide utility" data-key="Backspace" type="button" aria-label="Backspace">⌫</button>
+      </div>
+
+      <div class="row">
+        <button class="key letter" data-key="q" type="button">q</button>
+        <button class="key letter" data-key="w" type="button">w</button>
+        <button class="key letter" data-key="e" type="button">e</button>
+        <button class="key letter" data-key="r" type="button">r</button>
+        <button class="key letter" data-key="t" type="button">t</button>
+        <button class="key letter" data-key="y" type="button">y</button>
+        <button class="key letter" data-key="u" type="button">u</button>
+        <button class="key letter" data-key="i" type="button">i</button>
+        <button class="key letter" data-key="o" type="button">o</button>
+        <button class="key letter" data-key="p" type="button">p</button>
+      </div>
+
+      <div class="row">
+        <button class="key letter" data-key="a" type="button">a</button>
+        <button class="key letter" data-key="s" type="button">s</button>
+        <button class="key letter" data-key="d" type="button">d</button>
+        <button class="key letter" data-key="f" type="button">f</button>
+        <button class="key letter" data-key="g" type="button">g</button>
+        <button class="key letter" data-key="h" type="button">h</button>
+        <button class="key letter" data-key="j" type="button">j</button>
+        <button class="key letter" data-key="k" type="button">k</button>
+        <button class="key letter" data-key="l" type="button">l</button>
+        <button class="key wide utility" data-key="Enter" type="button">Enter</button>
+      </div>
+
+      <div class="row">
+        <button class="key wide utility" id="caps-btn" data-key="Caps" type="button" aria-pressed="false">Caps</button>
+        <button class="key letter" data-key="z" type="button">z</button>
+        <button class="key letter" data-key="x" type="button">x</button>
+        <button class="key letter" data-key="c" type="button">c</button>
+        <button class="key letter" data-key="v" type="button">v</button>
+        <button class="key letter" data-key="b" type="button">b</button>
+        <button class="key letter" data-key="n" type="button">n</button>
+        <button class="key letter" data-key="m" type="button">m</button>
+        <button class="key" data-key="," type="button">,</button>
+        <button class="key" data-key="." type="button">.</button>
+      </div>
+
+      <div class="row">
+        <button class="key space" data-key="Space" type="button">Space</button>
+      </div>
+    </div>
+
+    <p class="footer-note">A little glass, a lot of focus.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
